@@ -1,8 +1,9 @@
 <%@ page import="java.util.ArrayList" %>
-<%@ page import="entity.Resource" %>
+<%@ page import="entity.ResourceEntity" %>
 <%@ page import="dao.ResourceDao" %>
-<%@ page import="entity.User" %>
-<%@ page import="dao.UserDao" %><%--
+<%@ page import="entity.UserEntity" %>
+<%@ page import="dao.UserDao" %>
+<%--
   Created by IntelliJ IDEA.
   User: ange
   Date: 2018/5/15
@@ -13,7 +14,7 @@
 <%
     String keyword = "";
     keyword = request.getParameter("keyword");
-    ArrayList<Resource> resources;
+    ArrayList<ResourceEntity> resources;
     if (keyword == null || keyword.equals("")){
         int range = 3;
         resources = (new ResourceDao()).getResource_byRange(range);
@@ -79,8 +80,8 @@
         <div class="col-md-8">
             <div class="row"><span><%=pageOut%></span></div>
             <%
-                User user;
-                for (int i=0; i<resources.size(); i++){
+                UserEntity user;
+                for (int i = 0; i< resources.size(); i++){
                     user = (new UserDao()).getUserInfoByID(resources.get(i).getUser_id());
             %>
             <div class="row rec-res-item">

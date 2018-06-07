@@ -4,6 +4,7 @@ import dao.CommentDao;
 import dao.PostDao;
 import dao.UserDao;
 import model.CommentByUserModel;
+import model.FolllowedPostByUserModel;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -120,6 +121,20 @@ public class Test {
             }
         } catch (SQLException e) {
             System.out.println("fail to test_getComments_byUsrId"+e.getMessage());
+        }
+    }
+
+    public void test_getFollowedPosts_byUserid(String usr_id){
+        try {
+            ArrayList<FolllowedPostByUserModel> models = new PostDao().getFollowedPosts_byUserid(usr_id);
+            for (FolllowedPostByUserModel model : models){
+                println(model.getTitle());
+                println(model.getAuthor_name());
+                println(model.getPub_date().toString());
+                println("-----------------------------------");
+            }
+        } catch (SQLException e) {
+            System.out.println("fail to test_getFollowedPosts_byUserid"+e.getMessage());
         }
     }
 

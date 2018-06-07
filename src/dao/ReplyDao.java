@@ -10,7 +10,7 @@ public class ReplyDao {
         reply.setDate(rs.getDate());
         reply.setDetail(rs.getString());
         reply.setId(rs.getString());
-        reply.setUser_id(rs.getString());
+        reply.setAuthor_id(rs.getString());
         return reply;
     }
      */

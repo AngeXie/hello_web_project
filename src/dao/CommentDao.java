@@ -14,19 +14,19 @@ public class CommentDao {
      * @param post_id
      */
     public ArrayList<CommentEntity> getComment_byPostId(String post_id){
-        ArrayList<CommentEntity> commentEntities = new ArrayList<CommentEntity>();
+        ArrayList<CommentEntity> comments = new ArrayList<CommentEntity>();
         String sql = "select * from TB_COMMENT where post_id = ? Order By com_date Desc";
         String[] objs = {post_id};
         try {
             ResultSet rs = dbDao.getData(sql, objs);
             while (rs.next()){
-                commentEntities.add(getCommentEntity(rs));
+                comments.add(getCommentEntity(rs));
             }
             dbDao.dispose();
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
-        return commentEntities;
+        return comments;
     }
 
     /**
@@ -81,13 +81,13 @@ public class CommentDao {
 
 
     private CommentEntity getCommentEntity(ResultSet rs) throws SQLException {
-        CommentEntity commentEntity = new CommentEntity();
-        commentEntity.setComment_id(rs.getString("com_id"));
-        commentEntity.setDate(rs.getDate("com_date"));
-        commentEntity.setDetail(rs.getString("detail"));
-        commentEntity.setLike_num(rs.getInt("like_num"));
-        commentEntity.setPost_id(rs.getString("post_id"));
-        commentEntity.setUser_id(rs.getString("usr_id"));
-        return commentEntity;
+        CommentEntity comment = new CommentEntity();
+        comment.setComment_id(rs.getString("com_id"));
+        comment.setDate(rs.getDate("com_date"));
+        comment.setDetail(rs.getString("detail"));
+        comment.setLike_num(rs.getInt("like_num"));
+        comment.setPost_id(rs.getString("post_id"));
+        comment.setUser_id(rs.getString("usr_id"));
+        return comment;
     }
 }

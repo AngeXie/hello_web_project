@@ -7,67 +7,209 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82b10a08-84e2-4377-a458-5ae2430d6628" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/commons-beanutils-1.8.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/commons-collections-3.2.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/commons-fileupload-1.3.3.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/commons-io-2.6.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/commons-lang-2.5.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/commons-logging-1.1.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/ezmorph-1.0.6.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/json-lib-2.4-jdk15.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dao/CommentDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dao/ReplyDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/CommentByUserModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/FolllowedPostByUserModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/serivce/CommentServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/serivce/Test.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/serivce/UploadImg.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/util/UploadImgResult.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/util/UploadImgResult_util.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/post_style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/jquery-1.4.2.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/post.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/wangEditor/wangEditor.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/wangEditor/wangEditor.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/entity/Comment.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/entity/Feedback.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/entity/News.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/entity/Permission.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/entity/Post.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/entity/Reply.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/entity/Report.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/entity/Resource.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/entity/User.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/post.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/post.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/classes/entity/Comment.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/classes/entity/Feedback.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/classes/entity/News.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/classes/entity/Permission.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/classes/entity/Post.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/classes/entity/Reply.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/classes/entity/Report.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/classes/entity/Resource.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/classes/entity/User.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/classes/web/post.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/post.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/dao/CommentDao.class" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/dao/CommentDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/dao/NewsDao.class" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/dao/NewsDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/dao/PostDao.class" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/dao/PostDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/dao/ReplyDao.class" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/dao/ReplyDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/dao/ResourceDao.class" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/dao/ResourceDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/dao/UserDao.class" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/dao/UserDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/entity/Resource.class" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/entity/Resource.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/entity/User.class" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/entity/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/model/CommentByUserModel.class" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/model/CommentByUserModel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/model/FolllowedPostByUserModel.class" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/model/FolllowedPostByUserModel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/serivce/CommentServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/serivce/CommentServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/serivce/LoginServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/serivce/LoginServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/serivce/RegisterServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/serivce/RegisterServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/serivce/Test.class" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/serivce/Test.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/dao/CommentDao.class" afterPath="$PROJECT_DIR$/web/classes/dao/CommentDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/dao/NewsDao.class" afterPath="$PROJECT_DIR$/web/classes/dao/NewsDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/dao/PostDao.class" afterPath="$PROJECT_DIR$/web/classes/dao/PostDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/dao/ReplyDao.class" afterPath="$PROJECT_DIR$/web/classes/dao/ReplyDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/dao/ResourceDao.class" afterPath="$PROJECT_DIR$/web/classes/dao/ResourceDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/dao/UserDao.class" afterPath="$PROJECT_DIR$/web/classes/dao/UserDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/entity/Resource.class" afterPath="$PROJECT_DIR$/web/classes/entity/Resource.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/entity/User.class" afterPath="$PROJECT_DIR$/web/classes/entity/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/model/CommentByUserModel.class" afterPath="$PROJECT_DIR$/web/classes/model/CommentByUserModel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/model/FolllowedPostByUserModel.class" afterPath="$PROJECT_DIR$/web/classes/model/FolllowedPostByUserModel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/serivce/CommentServlet.class" afterPath="$PROJECT_DIR$/web/classes/serivce/CommentServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/serivce/LoginServlet.class" afterPath="$PROJECT_DIR$/web/classes/serivce/LoginServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/serivce/RegisterServlet.class" afterPath="$PROJECT_DIR$/web/classes/serivce/RegisterServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/serivce/Test.class" afterPath="$PROJECT_DIR$/web/classes/serivce/Test.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/hello_web_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/hello_web_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/.idea/artifacts/hello_web_war_exploded.xml" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/.idea/artifacts/hello_web_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/.idea/workspace.xml" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/bootstrap-4.1.1-dist/css/bootstrap-grid.css" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/bootstrap-4.1.1-dist/css/bootstrap-grid.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/bootstrap-4.1.1-dist/css/bootstrap-grid.min.css" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/bootstrap-4.1.1-dist/css/bootstrap-grid.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/bootstrap-4.1.1-dist/css/bootstrap-reboot.css" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/bootstrap-4.1.1-dist/css/bootstrap-reboot.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/bootstrap-4.1.1-dist/css/bootstrap-reboot.min.css" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/bootstrap-4.1.1-dist/css/bootstrap-reboot.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/bootstrap-4.1.1-dist/css/bootstrap.css" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/bootstrap-4.1.1-dist/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/bootstrap-4.1.1-dist/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/bootstrap-4.1.1-dist/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/bootstrap-4.1.1-dist/js/bootstrap.bundle.js" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/bootstrap-4.1.1-dist/js/bootstrap.bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/bootstrap-4.1.1-dist/js/bootstrap.bundle.min.js" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/bootstrap-4.1.1-dist/js/bootstrap.bundle.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/bootstrap-4.1.1-dist/js/bootstrap.js" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/bootstrap-4.1.1-dist/js/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/bootstrap-4.1.1-dist/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/bootstrap-4.1.1-dist/js/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/css/post_style.css" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/css/post_style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/HELP-US-OUT.txt" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/HELP-US-OUT.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/css/font-awesome.css" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/css/font-awesome.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/css/font-awesome.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/less/animated.less" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/less/animated.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/less/bordered-pulled.less" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/less/bordered-pulled.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/less/core.less" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/less/core.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/less/fixed-width.less" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/less/fixed-width.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/less/font-awesome.less" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/less/font-awesome.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/less/icons.less" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/less/icons.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/less/larger.less" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/less/larger.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/less/list.less" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/less/list.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/less/mixins.less" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/less/mixins.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/less/path.less" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/less/path.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/less/rotated-flipped.less" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/less/rotated-flipped.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/less/screen-reader.less" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/less/screen-reader.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/less/stacked.less" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/less/stacked.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/less/variables.less" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/less/variables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/scss/_animated.scss" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/scss/_animated.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/scss/_bordered-pulled.scss" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/scss/_bordered-pulled.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/scss/_core.scss" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/scss/_core.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/scss/_fixed-width.scss" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/scss/_fixed-width.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/scss/_icons.scss" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/scss/_icons.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/scss/_larger.scss" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/scss/_larger.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/scss/_list.scss" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/scss/_list.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/scss/_mixins.scss" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/scss/_mixins.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/scss/_path.scss" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/scss/_path.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/scss/_rotated-flipped.scss" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/scss/_rotated-flipped.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/scss/_screen-reader.scss" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/scss/_screen-reader.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/scss/_stacked.scss" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/scss/_stacked.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/scss/_variables.scss" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/scss/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/scss/font-awesome.scss" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/font-awesome-4.7.0/scss/font-awesome.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/post.jsp" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/post.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/resource.jsp" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/classes/web/resource.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/bootstrap-4.1.1-dist/css/bootstrap-grid.css" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/bootstrap-4.1.1-dist/css/bootstrap-grid.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/bootstrap-4.1.1-dist/css/bootstrap-grid.min.css" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/bootstrap-4.1.1-dist/css/bootstrap-grid.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/bootstrap-4.1.1-dist/css/bootstrap-reboot.css" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/bootstrap-4.1.1-dist/css/bootstrap-reboot.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/bootstrap-4.1.1-dist/css/bootstrap-reboot.min.css" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/bootstrap-4.1.1-dist/css/bootstrap-reboot.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/bootstrap-4.1.1-dist/css/bootstrap.css" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/bootstrap-4.1.1-dist/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/bootstrap-4.1.1-dist/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/bootstrap-4.1.1-dist/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/bootstrap-4.1.1-dist/js/bootstrap.bundle.js" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/bootstrap-4.1.1-dist/js/bootstrap.bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/bootstrap-4.1.1-dist/js/bootstrap.bundle.min.js" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/bootstrap-4.1.1-dist/js/bootstrap.bundle.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/bootstrap-4.1.1-dist/js/bootstrap.js" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/bootstrap-4.1.1-dist/js/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/bootstrap-4.1.1-dist/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/bootstrap-4.1.1-dist/js/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/css/post_style.css" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/css/post_style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/HELP-US-OUT.txt" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/HELP-US-OUT.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/css/font-awesome.css" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/css/font-awesome.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/css/font-awesome.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/less/animated.less" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/less/animated.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/less/bordered-pulled.less" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/less/bordered-pulled.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/less/core.less" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/less/core.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/less/fixed-width.less" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/less/fixed-width.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/less/font-awesome.less" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/less/font-awesome.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/less/icons.less" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/less/icons.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/less/larger.less" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/less/larger.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/less/list.less" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/less/list.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/less/mixins.less" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/less/mixins.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/less/path.less" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/less/path.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/less/rotated-flipped.less" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/less/rotated-flipped.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/less/screen-reader.less" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/less/screen-reader.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/less/stacked.less" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/less/stacked.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/less/variables.less" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/less/variables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/scss/_animated.scss" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/scss/_animated.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/scss/_bordered-pulled.scss" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/scss/_bordered-pulled.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/scss/_core.scss" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/scss/_core.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/scss/_fixed-width.scss" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/scss/_fixed-width.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/scss/_icons.scss" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/scss/_icons.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/scss/_larger.scss" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/scss/_larger.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/scss/_list.scss" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/scss/_list.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/scss/_mixins.scss" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/scss/_mixins.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/scss/_path.scss" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/scss/_path.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/scss/_rotated-flipped.scss" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/scss/_rotated-flipped.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/scss/_screen-reader.scss" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/scss/_screen-reader.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/scss/_stacked.scss" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/scss/_stacked.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/scss/_variables.scss" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/scss/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/scss/font-awesome.scss" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/font-awesome-4.7.0/scss/font-awesome.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/post.jsp" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/post.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/resource.jsp" afterPath="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/resource.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dao/CommentDao.java" afterPath="$PROJECT_DIR$/src/dao/CommentDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dao/PostDao.java" afterPath="$PROJECT_DIR$/src/dao/PostDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dao/ResourceDao.java" afterPath="$PROJECT_DIR$/src/dao/ResourceDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dao/UserDao.java" afterPath="$PROJECT_DIR$/src/dao/UserDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/entity/Resource.java" afterPath="$PROJECT_DIR$/src/entity/Resource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/entity/User.java" afterPath="$PROJECT_DIR$/src/entity/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/.idea/artifacts/hello_web_war_exploded.xml" afterPath="$PROJECT_DIR$/web/classes/.idea/artifacts/hello_web_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/.idea/workspace.xml" afterPath="$PROJECT_DIR$/web/classes/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/classes/web/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dao/ReplyDao.java" afterPath="$PROJECT_DIR$/src/dao/ReplyDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/entity/CommentEntity.java" afterPath="$PROJECT_DIR$/src/entity/CommentEntity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/FolllowedPostByUserModel.java" afterPath="$PROJECT_DIR$/src/model/FolllowedPostByUserModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/serivce/RegisterServlet.java" afterPath="$PROJECT_DIR$/src/serivce/RegisterServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/serivce/Test.java" afterPath="$PROJECT_DIR$/src/serivce/Test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/bootstrap-4.1.1-dist/css/bootstrap-grid.css" afterPath="$PROJECT_DIR$/web/classes/web/bootstrap-4.1.1-dist/css/bootstrap-grid.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/bootstrap-4.1.1-dist/css/bootstrap-grid.min.css" afterPath="$PROJECT_DIR$/web/classes/web/bootstrap-4.1.1-dist/css/bootstrap-grid.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/bootstrap-4.1.1-dist/css/bootstrap-reboot.css" afterPath="$PROJECT_DIR$/web/classes/web/bootstrap-4.1.1-dist/css/bootstrap-reboot.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/bootstrap-4.1.1-dist/css/bootstrap-reboot.min.css" afterPath="$PROJECT_DIR$/web/classes/web/bootstrap-4.1.1-dist/css/bootstrap-reboot.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/bootstrap-4.1.1-dist/css/bootstrap.css" afterPath="$PROJECT_DIR$/web/classes/web/bootstrap-4.1.1-dist/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/bootstrap-4.1.1-dist/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/classes/web/bootstrap-4.1.1-dist/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/bootstrap-4.1.1-dist/js/bootstrap.bundle.js" afterPath="$PROJECT_DIR$/web/classes/web/bootstrap-4.1.1-dist/js/bootstrap.bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/bootstrap-4.1.1-dist/js/bootstrap.bundle.min.js" afterPath="$PROJECT_DIR$/web/classes/web/bootstrap-4.1.1-dist/js/bootstrap.bundle.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/bootstrap-4.1.1-dist/js/bootstrap.js" afterPath="$PROJECT_DIR$/web/classes/web/bootstrap-4.1.1-dist/js/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/bootstrap-4.1.1-dist/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/web/classes/web/bootstrap-4.1.1-dist/js/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/css/post_style.css" afterPath="$PROJECT_DIR$/web/classes/web/css/post_style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/HELP-US-OUT.txt" afterPath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/HELP-US-OUT.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/css/font-awesome.css" afterPath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/css/font-awesome.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/css/font-awesome.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/less/animated.less" afterPath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/less/animated.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/less/bordered-pulled.less" afterPath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/less/bordered-pulled.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/less/core.less" afterPath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/less/core.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/less/fixed-width.less" afterPath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/less/fixed-width.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/less/font-awesome.less" afterPath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/less/font-awesome.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/less/icons.less" afterPath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/less/icons.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/less/larger.less" afterPath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/less/larger.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/less/list.less" afterPath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/less/list.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/less/mixins.less" afterPath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/less/mixins.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/less/path.less" afterPath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/less/path.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/less/rotated-flipped.less" afterPath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/less/rotated-flipped.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/less/screen-reader.less" afterPath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/less/screen-reader.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/less/stacked.less" afterPath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/less/stacked.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/less/variables.less" afterPath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/less/variables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/scss/_animated.scss" afterPath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/scss/_animated.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/scss/_bordered-pulled.scss" afterPath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/scss/_bordered-pulled.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/scss/_core.scss" afterPath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/scss/_core.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/scss/_fixed-width.scss" afterPath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/scss/_fixed-width.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/scss/_icons.scss" afterPath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/scss/_icons.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/scss/_larger.scss" afterPath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/scss/_larger.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/scss/_list.scss" afterPath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/scss/_list.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/scss/_mixins.scss" afterPath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/scss/_mixins.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/scss/_path.scss" afterPath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/scss/_path.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/scss/_rotated-flipped.scss" afterPath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/scss/_rotated-flipped.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/scss/_screen-reader.scss" afterPath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/scss/_screen-reader.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/scss/_stacked.scss" afterPath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/scss/_stacked.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/scss/_variables.scss" afterPath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/scss/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/scss/font-awesome.scss" afterPath="$PROJECT_DIR$/web/classes/web/font-awesome-4.7.0/scss/font-awesome.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/index.jsp" afterPath="$PROJECT_DIR$/web/classes/web/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/post.jsp" afterPath="$PROJECT_DIR$/web/classes/web/post.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/classes/web/resource.jsp" afterPath="$PROJECT_DIR$/web/classes/web/resource.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/post_style.css" afterPath="$PROJECT_DIR$/web/css/post_style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/web/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/font-awesome-4.7.0/less/icons.less" afterPath="$PROJECT_DIR$/web/font-awesome-4.7.0/less/icons.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/font-awesome-4.7.0/less/mixins.less" afterPath="$PROJECT_DIR$/web/font-awesome-4.7.0/less/mixins.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/font-awesome-4.7.0/less/variables.less" afterPath="$PROJECT_DIR$/web/font-awesome-4.7.0/less/variables.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/login.jsp" afterPath="$PROJECT_DIR$/web/login.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/post.jsp" afterPath="$PROJECT_DIR$/web/post.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/register.jsp" afterPath="$PROJECT_DIR$/web/register.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/resource.jsp" afterPath="$PROJECT_DIR$/web/resource.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/entity/AdPermission.java" afterPath="$PROJECT_DIR$/src/entity/AdPermissionEntity.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -79,66 +221,79 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PostDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dao/PostDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="37" column="22" lean-forward="false" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
-              <folding>
-                <element signature="method#getPosts_byUsrId#0;class#PostDao#0" expanded="false" />
-                <element signature="method#getPost_byid#0;class#PostDao#0" expanded="false" />
-                <element signature="method#getFollowedCount_byPostId#0;class#PostDao#0" expanded="false" />
-                <element signature="method#getPosts_withRange#0;class#PostDao#0" expanded="false" />
-                <element signature="method#updatePostInfo_likeNum#0;class#PostDao#0" expanded="false" />
-                <element signature="method#updatePostInfo_FollowNum#0;class#PostDao#0" expanded="false" />
-                <element signature="method#getPostEntity#0;class#PostDao#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommentDao.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/dao/CommentDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="32" column="21" lean-forward="true" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-              <folding>
-                <element signature="method#getComment_byPostId#0;class#CommentDao#0" expanded="false" />
-                <element signature="method#getCommentCount_byPostId#0;class#CommentDao#0" expanded="false" />
-                <element signature="method#getComments_byUsrId#0;class#CommentDao#0" expanded="false" />
-                <element signature="method#addComment_byUserIdPostsId#0;class#CommentDao#0" expanded="false" />
-                <element signature="method#getCommentEntity#0;class#CommentDao#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/serivce/Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
-              <caret line="118" column="63" lean-forward="false" selection-start-line="118" selection-start-column="63" selection-end-line="118" selection-end-column="63" />
-              <folding>
-                <element signature="method#test_updateUsrName#0;class#Test#0" expanded="false" />
-                <element signature="method#test_updateUsrPwd#0;class#Test#0" expanded="false" />
-                <element signature="method#test_updateUsrHead#0;class#Test#0" expanded="false" />
-                <element signature="method#test_updateUsrEmail#0;class#Test#0" expanded="false" />
-                <element signature="method#test_updatePostLikeNum#0;class#Test#0" expanded="false" />
-                <element signature="method#test_updatePostFollowNum#0;class#Test#0" expanded="false" />
-                <element signature="method#test_getArticle_count#0;class#Test#0" expanded="false" />
-                <element signature="method#test_getFollowed_count#0;class#Test#0" expanded="false" />
-                <element signature="method#test_getCommentCount_byPostId#0;class#Test#0" expanded="false" />
-                <element signature="method#test_getFollowedCount_byPostId#0;class#Test#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="25" column="64" lean-forward="false" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="64" />
+            <state relative-caret-position="1342">
+              <caret line="61" column="7" lean-forward="false" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="7" />
+              <folding>
+                <marker date="1528393741200" expanded="true" signature="506:1123" ph="..." />
+                <marker date="1528393741200" expanded="true" signature="7760:7804" ph="..." />
+                <marker date="1528393741200" expanded="true" signature="7760:7821" ph="..." />
+                <marker date="1528393741200" expanded="true" signature="7760:7836" ph="..." />
+                <marker date="1528393741200" expanded="true" signature="7760:7849" ph="..." />
+                <marker date="1528393741200" expanded="true" signature="7760:8108" ph="..." />
+                <marker date="1528393741200" expanded="true" signature="7760:8793" ph="..." />
+                <marker date="1528393741200" expanded="true" signature="7760:8802" ph="..." />
+                <marker date="1528393741200" expanded="true" signature="7760:9678" ph="..." />
+                <marker date="1528393741200" expanded="true" signature="7760:9687" ph="..." />
+                <marker date="1528393741200" expanded="true" signature="7890:8097" ph="..." />
+                <marker date="1528393741200" expanded="true" signature="7958:8084" ph="..." />
+                <marker date="1528393741200" expanded="true" signature="8149:8203" ph="..." />
+                <marker date="1528393741200" expanded="true" signature="8247:8760" ph="..." />
+                <marker date="1528393741200" expanded="true" signature="8287:8341" ph="..." />
+                <marker date="1528393741200" expanded="true" signature="8381:8719" ph="..." />
+                <marker date="1528393741200" expanded="true" signature="8631:8706" ph="..." />
+                <marker date="1528393741200" expanded="true" signature="8729:8746" ph="..." />
+                <marker date="1528393741200" expanded="true" signature="8768:8781" ph="..." />
+                <marker date="1528393741200" expanded="true" signature="8846:9670" ph="..." />
+                <marker date="1528393741200" expanded="true" signature="8866:9663" ph="..." />
+                <marker date="1528393741200" expanded="true" signature="8926:8998" ph="..." />
+                <marker date="1528393741200" expanded="true" signature="9025:9145" ph="..." />
+                <marker date="1528393741200" expanded="true" signature="9172:9435" ph="..." />
+                <marker date="1528393741200" expanded="true" signature="9462:9569" ph="..." />
+                <marker date="1528393741200" expanded="true" signature="9596:9654" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dao/UserDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="968">
+              <caret line="114" column="68" lean-forward="false" selection-start-line="114" selection-start-column="68" selection-end-line="114" selection-end-column="68" />
+              <folding>
+                <element signature="method#getUserInfoByName#0;class#UserDao#0" expanded="false" />
+                <element signature="method#getUserInfoByID#0;class#UserDao#0" expanded="false" />
+                <element signature="method#getUserArticleCount_byId#0;class#UserDao#0" expanded="false" />
+                <element signature="method#getUserFollowedCount_byUserId#0;class#UserDao#0" expanded="false" />
+                <element signature="method#getUsers_withRange#0;class#UserDao#0" expanded="false" />
+                <element signature="method#updateUsrInfo_name#0;class#UserDao#0" expanded="false" />
+                <element signature="method#updateUsrInfo_pwd#0;class#UserDao#0" expanded="false" />
+                <element signature="method#updateUsrInfo_head#0;class#UserDao#0" expanded="false" />
+                <element signature="method#updateUsrInfo_Email#0;class#UserDao#0" expanded="false" />
+                <element signature="method#getUsrEntity#0;class#UserDao#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegisterServlet.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/serivce/RegisterServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="44" column="34" lean-forward="true" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/register.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="594">
+              <caret line="27" column="49" lean-forward="false" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -168,6 +323,12 @@
       <find>hooks</find>
       <find>customInsert</find>
       <find>上传图片失败</find>
+      <find>entities</find>
+      <find>Entities</find>
+      <find>Enti</find>
+      <find>Entit</find>
+      <find>comment</find>
+      <find>Entity</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -192,38 +353,38 @@
         <option value="$PROJECT_DIR$/src/entity/Post.java" />
         <option value="$PROJECT_DIR$/src/entity/Report.java" />
         <option value="$PROJECT_DIR$/src/dao/DbDao.java" />
-        <option value="$PROJECT_DIR$/web/register.jsp" />
-        <option value="$PROJECT_DIR$/web/login.jsp" />
         <option value="$PROJECT_DIR$/src/serivce/LoginServlet.java" />
         <option value="$PROJECT_DIR$/src/util/IDGenerator.java" />
-        <option value="$PROJECT_DIR$/src/serivce/RegisterServlet.java" />
         <option value="$PROJECT_DIR$/src/dao/NewsDao.java" />
         <option value="$PROJECT_DIR$/src/entity/Resource.java" />
         <option value="$PROJECT_DIR$/src/dao/ResourceDao.java" />
-        <option value="$PROJECT_DIR$/web/resource.jsp" />
         <option value="$PROJECT_DIR$/web/test.jsp" />
         <option value="$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/css/post_style.css" />
-        <option value="$PROJECT_DIR$/web/post.html" />
         <option value="$PROJECT_DIR$/web/wangEditor/wangEditor.js" />
         <option value="$PROJECT_DIR$/src/util/UploadImgResult.java" />
         <option value="$PROJECT_DIR$/src/util/UploadImgResult_util.java" />
         <option value="$PROJECT_DIR$/src/serivce/UploadImg.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/serivce/CommentServlet.java" />
-        <option value="$PROJECT_DIR$/web/css/post_style.css" />
         <option value="$PROJECT_DIR$/web/js/post_js.js" />
-        <option value="$PROJECT_DIR$/web/post.jsp" />
         <option value="$PROJECT_DIR$/src/entity/User.java" />
         <option value="$PROJECT_DIR$/src/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/dao/ReplyDao.java" />
         <option value="$PROJECT_DIR$/src/model/CommentsByUserModel.java" />
-        <option value="$PROJECT_DIR$/src/dao/CommentDao.java" />
-        <option value="$PROJECT_DIR$/src/model/CommentByUserModel.java" />
-        <option value="$PROJECT_DIR$/src/serivce/Test.java" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/model/FolllowedPostsByUserModel.java" />
         <option value="$PROJECT_DIR$/src/model/FolllowedPostByUserModel.java" />
+        <option value="$PROJECT_DIR$/src/serivce/Test.java" />
+        <option value="$PROJECT_DIR$/web/login.jsp" />
+        <option value="$PROJECT_DIR$/web/post.html" />
+        <option value="$PROJECT_DIR$/web/register.jsp" />
+        <option value="$PROJECT_DIR$/web/resource.jsp" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/web/css/post_style.css" />
+        <option value="$PROJECT_DIR$/web/post.jsp" />
+        <option value="$PROJECT_DIR$/src/model/CommentByUserModel.java" />
+        <option value="$PROJECT_DIR$/src/dao/CommentDao.java" />
         <option value="$PROJECT_DIR$/src/dao/PostDao.java" />
+        <option value="$PROJECT_DIR$/src/serivce/RegisterServlet.java" />
       </list>
     </option>
   </component>
@@ -271,9 +432,6 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -321,22 +479,13 @@
               <item name="hello_web" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="hello_web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hello_web" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hello_web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hello_web" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -347,14 +496,15 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.22350231" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\ij_project\hello_web\web\WEB-INF\lib" />
-      <recent name="F:\ij_project\hello_web\web\wangEditor" />
+      <recent name="F:\ij_project\hello_web\web\js" />
       <recent name="F:\ij_project\hello_web\web" />
       <recent name="F:\ij_project\hello_web\web\css" />
-      <recent name="F:\ij_project\hello_web\src\util" />
+      <recent name="F:\ij_project\hello_web\web\WEB-INF\lib" />
+      <recent name="F:\ij_project\hello_web\web\wangEditor" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -548,12 +698,13 @@
       <workItem from="1526988866507" duration="1940000" />
       <workItem from="1527753717864" duration="23962000" />
       <workItem from="1527854084855" duration="53922000" />
-      <workItem from="1528389049830" duration="21000" />
+      <workItem from="1528389049830" duration="6050000" />
+      <workItem from="1528414122817" duration="153000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101578000" />
+    <option name="totallyTimeSpent" value="107760000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
@@ -569,7 +720,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18628912" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47014925" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.519403" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -588,7 +739,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28656715" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -602,63 +753,22 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="41" />
+      <option name="time" value="43" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/entity/Feedback.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="27" lean-forward="false" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/AdminEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/login.html" />
-    <entry file="file://$PROJECT_DIR$/web/register.html" />
-    <entry file="file://$PROJECT_DIR$/web/resource.html" />
-    <entry file="file://$PROJECT_DIR$/src/serivce/LoginServle.java" />
-    <entry file="file://$PROJECT_DIR$/src/dao/DbDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-616">
-          <caret line="13" column="41" lean-forward="true" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="46" column="54" lean-forward="true" selection-start-line="46" selection-start-column="54" selection-end-line="46" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/util/IDGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="65" column="44" lean-forward="true" selection-start-line="65" selection-start-column="44" selection-end-line="65" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/News.java">
+    <entry file="file://$PROJECT_DIR$/src/entity/NewsEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-216">
           <caret line="13" column="27" lean-forward="false" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
           <folding>
-            <element signature="e#264#265#0" expanded="false" />
+            <element signature="e#276#277#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/Reply.java">
+    <entry file="file://$PROJECT_DIR$/src/entity/ReplyEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
@@ -666,33 +776,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/Resource.java">
+    <entry file="file://$PROJECT_DIR$/src/entity/ResourceEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="63" column="31" lean-forward="false" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
           <folding>
-            <element signature="e#1108#1109#0" expanded="false" />
-            <element signature="e#1152#1153#0" expanded="false" />
-            <element signature="e#1188#1189#0" expanded="false" />
+            <element signature="e#1120#1121#0" expanded="false" />
+            <element signature="e#1164#1165#0" expanded="false" />
+            <element signature="e#1200#1201#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/NewsDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="18" column="44" lean-forward="false" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/resource.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="42" column="28" lean-forward="false" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -705,21 +797,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/classes/web/css/post_style.css" />
-    <entry file="file://$PROJECT_DIR$/web/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-176">
-          <caret line="7" column="86" lean-forward="false" selection-start-line="7" selection-start-column="86" selection-end-line="7" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-528">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/css/post_style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
@@ -727,22 +804,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/post.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="69" lean-forward="true" selection-start-line="11" selection-start-column="69" selection-end-line="11" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/test.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/serivce/RegisterServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="33" column="55" lean-forward="true" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/out/artifacts/hello_web_war_exploded/post.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="73">
@@ -761,13 +823,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="713">
           <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/jquery-1.4.2.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-594">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -794,14 +849,14 @@
         <state relative-caret-position="44">
           <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="28" />
           <folding>
-            <element signature="e#166#167#0" expanded="true" />
-            <element signature="e#194#195#0" expanded="true" />
-            <element signature="e#237#238#0" expanded="true" />
-            <element signature="e#271#272#0" expanded="true" />
-            <element signature="e#304#305#0" expanded="true" />
-            <element signature="e#331#332#0" expanded="true" />
-            <element signature="e#373#374#0" expanded="true" />
-            <element signature="e#405#406#0" expanded="true" />
+            <element signature="e#166#167#0" expanded="false" />
+            <element signature="e#194#195#0" expanded="false" />
+            <element signature="e#237#238#0" expanded="false" />
+            <element signature="e#271#272#0" expanded="false" />
+            <element signature="e#304#305#0" expanded="false" />
+            <element signature="e#331#332#0" expanded="false" />
+            <element signature="e#373#374#0" expanded="false" />
+            <element signature="e#405#406#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -811,15 +866,8 @@
         <state relative-caret-position="1518">
           <caret line="69" column="20" lean-forward="true" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/wangEditor/wangEditor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-704">
-          <caret line="4261" column="31" lean-forward="false" selection-start-line="4261" selection-start-column="31" selection-end-line="4261" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -830,125 +878,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="33" column="13" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/serivce/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="39" column="38" lean-forward="false" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="38" />
-          <folding>
-            <element signature="e#1797#1798#0" expanded="false" />
-            <element signature="e#1839#1840#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/post_style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="164" column="15" lean-forward="true" selection-start-line="164" selection-start-column="15" selection-end-line="164" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/js/post_js.js" />
-    <entry file="file://$PROJECT_DIR$/src/entity/User.java">
+    <entry file="file://$PROJECT_DIR$/src/entity/UserEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="15" column="36" lean-forward="false" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
           <folding>
-            <element signature="e#506#507#0" expanded="true" />
-            <element signature="e#563#564#0" expanded="true" />
-            <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#651#652#0" expanded="true" />
-            <element signature="e#683#684#0" expanded="true" />
-            <element signature="e#733#734#0" expanded="true" />
-            <element signature="e#775#776#0" expanded="true" />
+            <element signature="e#512#513#0" expanded="false" />
+            <element signature="e#569#570#0" expanded="false" />
+            <element signature="e#621#622#0" expanded="false" />
+            <element signature="e#657#658#0" expanded="false" />
+            <element signature="e#689#690#0" expanded="false" />
+            <element signature="e#739#740#0" expanded="false" />
+            <element signature="e#781#782#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/post.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1900">
-          <caret line="269" column="23" lean-forward="true" selection-start-line="269" selection-start-column="23" selection-end-line="269" selection-end-column="23" />
-          <folding>
-            <marker date="1528219205811" expanded="true" signature="12104:12137" ph="..." />
-            <marker date="1528219205811" expanded="true" signature="12104:12164" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/ReplyDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model.java" />
-    <entry file="file://$PROJECT_DIR$/src/model/CommentByUserModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="25" column="35" lean-forward="false" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" column="64" lean-forward="false" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/serivce/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="118" column="63" lean-forward="false" selection-start-line="118" selection-start-column="63" selection-end-line="118" selection-end-column="63" />
-          <folding>
-            <element signature="method#test_updateUsrName#0;class#Test#0" expanded="false" />
-            <element signature="method#test_updateUsrPwd#0;class#Test#0" expanded="false" />
-            <element signature="method#test_updateUsrHead#0;class#Test#0" expanded="false" />
-            <element signature="method#test_updateUsrEmail#0;class#Test#0" expanded="false" />
-            <element signature="method#test_updatePostLikeNum#0;class#Test#0" expanded="false" />
-            <element signature="method#test_updatePostFollowNum#0;class#Test#0" expanded="false" />
-            <element signature="method#test_getArticle_count#0;class#Test#0" expanded="false" />
-            <element signature="method#test_getFollowed_count#0;class#Test#0" expanded="false" />
-            <element signature="method#test_getCommentCount_byPostId#0;class#Test#0" expanded="false" />
-            <element signature="method#test_getFollowedCount_byPostId#0;class#Test#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
-          <folding>
-            <element signature="method#getUserInfoByName#0;class#UserDao#0" expanded="false" />
-            <element signature="method#getUserInfoByID#0;class#UserDao#0" expanded="false" />
-            <element signature="method#getUserArticleCount_byId#0;class#UserDao#0" expanded="false" />
-            <element signature="method#getUserFollowedCount_byUserId#0;class#UserDao#0" expanded="false" />
-            <element signature="method#getUsers_withRange#0;class#UserDao#0" expanded="false" />
-            <element signature="method#addUser#0;class#UserDao#0" expanded="false" />
-            <element signature="method#updateUsrInfo_name#0;class#UserDao#0" expanded="false" />
-            <element signature="method#updateUsrInfo_pwd#0;class#UserDao#0" expanded="false" />
-            <element signature="method#updateUsrInfo_head#0;class#UserDao#0" expanded="false" />
-            <element signature="method#updateUsrInfo_Email#0;class#UserDao#0" expanded="false" />
-            <element signature="method#getUsrEntity#0;class#UserDao#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/Post.java">
+    <entry file="file://$PROJECT_DIR$/src/entity/PostEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="15" column="25" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="15" selection-end-column="25" />
@@ -956,63 +904,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/FolllowedPostByUserModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-201">
-          <caret line="29" column="32" lean-forward="false" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#882#883#0" expanded="true" />
-            <element signature="e#928#929#0" expanded="true" />
-            <element signature="e#966#967#0" expanded="true" />
-            <element signature="e#1002#1003#0" expanded="true" />
-            <element signature="e#1034#1035#0" expanded="true" />
-            <element signature="e#1084#1085#0" expanded="true" />
-            <element signature="e#1126#1127#0" expanded="true" />
-            <element signature="e#1159#1160#0" expanded="true" />
-            <element signature="e#1190#1191#0" expanded="true" />
-            <element signature="e#1236#1237#0" expanded="true" />
-            <element signature="e#1276#1277#0" expanded="true" />
-            <element signature="e#1310#1311#0" expanded="true" />
-            <element signature="e#1342#1343#0" expanded="true" />
-            <element signature="e#1390#1391#0" expanded="true" />
-            <element signature="e#1432#1433#0" expanded="true" />
-            <element signature="e#1467#1468#0" expanded="true" />
-            <element signature="e#1501#1502#0" expanded="true" />
-            <element signature="e#1552#1553#0" expanded="true" />
-            <element signature="e#1598#1599#0" expanded="true" />
-            <element signature="e#1635#1636#0" expanded="true" />
-            <element signature="e#1671#1672#0" expanded="true" />
-            <element signature="e#1726#1727#0" expanded="true" />
-            <element signature="e#1776#1777#0" expanded="true" />
-            <element signature="e#1810#1811#0" expanded="true" />
-            <element signature="e#1840#1841#0" expanded="true" />
-            <element signature="e#1886#1887#0" expanded="true" />
-            <element signature="e#1924#1925#0" expanded="true" />
-            <element signature="e#1957#1958#0" expanded="true" />
-            <element signature="e#1986#1987#0" expanded="true" />
-            <element signature="e#2030#2031#0" expanded="true" />
-            <element signature="e#2066#2067#0" expanded="true" />
-            <element signature="e#2098#2099#0" expanded="true" />
-            <element signature="e#2126#2127#0" expanded="true" />
-            <element signature="e#2168#2169#0" expanded="true" />
-            <element signature="e#2202#2203#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/entity/AdPermissionEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/Comment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -1025,12 +920,196 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/post.html" />
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="33" column="13" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/resource_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/login_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resource.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-498">
+          <caret line="29" column="27" lean-forward="true" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9">
+          <caret line="41" column="93" lean-forward="false" selection-start-line="41" selection-start-column="93" selection-end-line="41" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/wangEditor/wangEditor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="4272" column="31" lean-forward="true" selection-start-line="4272" selection-start-column="31" selection-end-line="4272" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bootstrap-4.1.1-dist/js/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-823">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bootstrap-4.1.1-dist/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/font-awesome-4.7.0/css/font-awesome.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/style.css" />
+    <entry file="file://$PROJECT_DIR$/web/font-awesome-4.7.0/css/font-awesome.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bootstrap-4.1.1-dist/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jquery-1.4.2.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/post_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1980">
+          <caret line="90" column="1" lean-forward="true" selection-start-line="90" selection-start-column="1" selection-end-line="90" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/CommentEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/CommentByUserModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding>
+            <element signature="e#764#765#0" expanded="true" />
+            <element signature="e#797#798#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/DbDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/post.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3146">
+          <caret line="143" column="38" lean-forward="true" selection-start-line="143" selection-start-column="38" selection-end-line="143" selection-end-column="38" />
+          <folding>
+            <marker date="1528394598093" expanded="true" signature="12160:12220" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/FolllowedPostByUserModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="21" column="51" lean-forward="true" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/serivce/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="126" column="46" lean-forward="false" selection-start-line="126" selection-start-column="16" selection-end-line="126" selection-end-column="46" />
+          <folding>
+            <element signature="method#test_updateUsrName#0;class#Test#0" expanded="false" />
+            <element signature="method#test_updateUsrPwd#0;class#Test#0" expanded="false" />
+            <element signature="method#test_updateUsrHead#0;class#Test#0" expanded="false" />
+            <element signature="method#test_updateUsrEmail#0;class#Test#0" expanded="false" />
+            <element signature="method#test_updatePostLikeNum#0;class#Test#0" expanded="false" />
+            <element signature="method#test_updatePostFollowNum#0;class#Test#0" expanded="false" />
+            <element signature="method#test_getArticle_count#0;class#Test#0" expanded="false" />
+            <element signature="method#test_getFollowed_count#0;class#Test#0" expanded="false" />
+            <element signature="method#test_getCommentCount_byPostId#0;class#Test#0" expanded="false" />
+            <element signature="method#test_getFollowedCount_byPostId#0;class#Test#0" expanded="false" />
+            <element signature="method#test_getComments_byUsrId#0;class#Test#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/CommentDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="28" column="23" lean-forward="false" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/ReplyDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/NewsDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-157">
+          <caret line="12" column="73" lean-forward="true" selection-start-line="12" selection-start-column="73" selection-end-line="12" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/PostDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="37" column="22" lean-forward="false" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+        <state relative-caret-position="67">
+          <caret line="28" column="20" lean-forward="false" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
           <folding>
-            <element signature="method#getPosts_byUsrId#0;class#PostDao#0" expanded="false" />
             <element signature="method#getPost_byid#0;class#PostDao#0" expanded="false" />
             <element signature="method#getFollowedCount_byPostId#0;class#PostDao#0" expanded="false" />
             <element signature="method#getPosts_withRange#0;class#PostDao#0" expanded="false" />
@@ -1041,17 +1120,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/CommentDao.java">
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="32" column="21" lean-forward="true" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+        <state relative-caret-position="1342">
+          <caret line="61" column="7" lean-forward="false" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="7" />
           <folding>
-            <element signature="method#getComment_byPostId#0;class#CommentDao#0" expanded="false" />
-            <element signature="method#getCommentCount_byPostId#0;class#CommentDao#0" expanded="false" />
-            <element signature="method#getComments_byUsrId#0;class#CommentDao#0" expanded="false" />
-            <element signature="method#addComment_byUserIdPostsId#0;class#CommentDao#0" expanded="false" />
-            <element signature="method#getCommentEntity#0;class#CommentDao#0" expanded="false" />
+            <marker date="1528393741200" expanded="true" signature="506:1123" ph="..." />
+            <marker date="1528393741200" expanded="true" signature="7760:7804" ph="..." />
+            <marker date="1528393741200" expanded="true" signature="7760:7821" ph="..." />
+            <marker date="1528393741200" expanded="true" signature="7760:7836" ph="..." />
+            <marker date="1528393741200" expanded="true" signature="7760:7849" ph="..." />
+            <marker date="1528393741200" expanded="true" signature="7760:8108" ph="..." />
+            <marker date="1528393741200" expanded="true" signature="7760:8793" ph="..." />
+            <marker date="1528393741200" expanded="true" signature="7760:8802" ph="..." />
+            <marker date="1528393741200" expanded="true" signature="7760:9678" ph="..." />
+            <marker date="1528393741200" expanded="true" signature="7760:9687" ph="..." />
+            <marker date="1528393741200" expanded="true" signature="7890:8097" ph="..." />
+            <marker date="1528393741200" expanded="true" signature="7958:8084" ph="..." />
+            <marker date="1528393741200" expanded="true" signature="8149:8203" ph="..." />
+            <marker date="1528393741200" expanded="true" signature="8247:8760" ph="..." />
+            <marker date="1528393741200" expanded="true" signature="8287:8341" ph="..." />
+            <marker date="1528393741200" expanded="true" signature="8381:8719" ph="..." />
+            <marker date="1528393741200" expanded="true" signature="8631:8706" ph="..." />
+            <marker date="1528393741200" expanded="true" signature="8729:8746" ph="..." />
+            <marker date="1528393741200" expanded="true" signature="8768:8781" ph="..." />
+            <marker date="1528393741200" expanded="true" signature="8846:9670" ph="..." />
+            <marker date="1528393741200" expanded="true" signature="8866:9663" ph="..." />
+            <marker date="1528393741200" expanded="true" signature="8926:8998" ph="..." />
+            <marker date="1528393741200" expanded="true" signature="9025:9145" ph="..." />
+            <marker date="1528393741200" expanded="true" signature="9172:9435" ph="..." />
+            <marker date="1528393741200" expanded="true" signature="9462:9569" ph="..." />
+            <marker date="1528393741200" expanded="true" signature="9596:9654" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/serivce/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="39" column="38" lean-forward="false" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="968">
+          <caret line="114" column="68" lean-forward="false" selection-start-line="114" selection-start-column="68" selection-end-line="114" selection-end-column="68" />
+          <folding>
+            <element signature="method#getUserInfoByName#0;class#UserDao#0" expanded="false" />
+            <element signature="method#getUserInfoByID#0;class#UserDao#0" expanded="false" />
+            <element signature="method#getUserArticleCount_byId#0;class#UserDao#0" expanded="false" />
+            <element signature="method#getUserFollowedCount_byUserId#0;class#UserDao#0" expanded="false" />
+            <element signature="method#getUsers_withRange#0;class#UserDao#0" expanded="false" />
+            <element signature="method#updateUsrInfo_name#0;class#UserDao#0" expanded="false" />
+            <element signature="method#updateUsrInfo_pwd#0;class#UserDao#0" expanded="false" />
+            <element signature="method#updateUsrInfo_head#0;class#UserDao#0" expanded="false" />
+            <element signature="method#updateUsrInfo_Email#0;class#UserDao#0" expanded="false" />
+            <element signature="method#getUsrEntity#0;class#UserDao#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="27" column="49" lean-forward="false" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/serivce/RegisterServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="44" column="34" lean-forward="true" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>

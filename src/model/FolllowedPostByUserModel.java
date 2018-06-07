@@ -5,8 +5,8 @@ import entity.PostEntity;
 import java.util.Date;
 
 public class FolllowedPostByUserModel {
-    private String user_id;
-    private String user_name;
+    private String author_id;
+    private String author_name;
     private Date pub_date;
     private Date last_date;
     private int like_number;
@@ -15,9 +15,9 @@ public class FolllowedPostByUserModel {
     private String detail;
     private String title;
 
-    public FolllowedPostByUserModel(PostEntity postEntity, String user_name) {
-        this.user_id = postEntity.getUser_id();
-        this.user_name =user_name;
+    public FolllowedPostByUserModel(PostEntity postEntity, String author_name) {
+        this.author_id = postEntity.getUser_id();
+        this.author_name = author_name;
         this.pub_date = postEntity.getPub_date();
         this.last_date = postEntity.getLast_date();
         this.like_number = postEntity.getLike_number();
@@ -27,20 +27,20 @@ public class FolllowedPostByUserModel {
         this.title = postEntity.getTitle();
     }
 
-    public String getUser_id() {
-        return user_id;
+    public String getAuthor_id() {
+        return author_id;
     }
 
-    public void setUser_id(String user_id) {
-        this.user_id = user_id;
+    public void setAuthor_id(String author_id) {
+        this.author_id = author_id;
     }
 
-    public String getUser_name() {
-        return user_name;
+    public String getAuthor_name() {
+        return author_name;
     }
 
-    public void setUser_name(String user_name) {
-        this.user_name = user_name;
+    public void setAuthor_name(String author_name) {
+        this.author_name = author_name;
     }
 
     public Date getPub_date() {

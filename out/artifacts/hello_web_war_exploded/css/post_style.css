@@ -79,15 +79,15 @@
  	font-size: 20px;
  	line-height: 35px;
  }
-.post_date, .comment-date{
-	color: #666666;
-	font-size: 15px;
-	vertical-align: bottom;
-	margin-right: 20px;
-	margin-top: 5px;
-}
-.post-btn{
-	margin-top: 20px;
+ .post_date, .comment-date{
+	 color: #666666;
+	 font-size: 15px;
+	 vertical-align: bottom;
+	 margin-right: 20px;
+	 margin-top: 5px;
+ }
+.post-btn {
+	margin-top: 40px;
 }
  .post-btn a{
  	color: #999;
@@ -163,7 +163,7 @@
  	font-weight: 600;
  }
  .comment-btns{
- 	margin-top: 40px;
+ 	margin-top: 60px;
  }
  .comment-btns a{
  	color: #999;
@@ -227,3 +227,5 @@
  	background-color: #999999;
  	color: #EDEDED;
  }
+
+

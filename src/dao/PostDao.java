@@ -18,15 +18,15 @@ public class PostDao {
      * @return
      */
     public ArrayList<PostEntity> getPosts_byUsrId(String usr_id) throws SQLException {
-        ArrayList<PostEntity> postEntities = new ArrayList<PostEntity>();
+        ArrayList<PostEntity> posts = new ArrayList<PostEntity>();
         String sql = "select * from tb_post where usr_id = ?";
         String[] objs = {usr_id};
         ResultSet rs = dbDao.getData(sql, objs);
         while (rs.next()) {
-            postEntities.add(getPostEntity(rs));
+            posts.add(getPostEntity(rs));
         }
         dbDao.dispose();
-        return postEntities;
+        return posts;
     }
 
     /**
@@ -34,8 +34,16 @@ public class PostDao {
      * @param usr_id
      * @return
      */
-    public ArrayList<FolllowedPostByUserModel> getFollowedPosts_byUserid(String usr_id){
+    public ArrayList<FolllowedPostByUserModel> getFollowedPosts_byUserid(String usr_id) throws SQLException {
         ArrayList<FolllowedPostByUserModel> models = new ArrayList<FolllowedPostByUserModel>();
+        String sql  = "select tp.*,tu.usr_name from TB_POST tp, TB_USER tu " +
+                "where tp.usr_id=tu.usr_id and tp.post_id in (select post_id from TB_FOLLOW_POST tfp where tfp.usr_id = ?)";
+        String[] objs = {usr_id};
+        ResultSet rs = dbDao.getData(sql, objs);
+        while (rs.next()) {
+            models.add(new FolllowedPostByUserModel(getPostEntity(rs), rs.getString("usr_name")));
+        }
+        dbDao.dispose();
         return models;
     }
 
@@ -45,18 +53,18 @@ public class PostDao {
      * @return
      */
     public PostEntity getPost_byid(String id){
-        PostEntity postEntity = new PostEntity();
+        PostEntity post = new PostEntity();
         String sql = "select * from TB_POST where post_id = ?";
         String[] objs = {id};
         try {
             ResultSet rs = dbDao.getData(sql, objs);
             if (rs.next())
-                postEntity = getPostEntity(rs);
+                post = getPostEntity(rs);
             dbDao.dispose();
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
-        return postEntity;
+        return post;
     }
 
     /**
@@ -82,20 +90,20 @@ public class PostDao {
      * @return
      */
     public ArrayList<PostEntity> getPosts_withRange(int range){
-        ArrayList<PostEntity> postEntities = new ArrayList<PostEntity>();
+        ArrayList<PostEntity> posts = new ArrayList<PostEntity>();
         String sql = "select * from TB_POST";
         String[] objs = {};
         try {
             ResultSet rs = dbDao.getData(sql, objs);
             while (rs.next() && range>0){
-                postEntities.add(getPostEntity(rs));
+                posts.add(getPostEntity(rs));
                 range--;
             }
             dbDao.dispose();
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
-        return postEntities;
+        return posts;
     }
 
     /**
@@ -130,15 +138,15 @@ public class PostDao {
     }
 
     private PostEntity getPostEntity(ResultSet rs) throws SQLException {
-        PostEntity postEntity = new PostEntity();
-        postEntity.setUser_id(rs.getString("usr_id"));
-        postEntity.setPub_date(rs.getDate("pub_date"));
-        postEntity.setLast_date(rs.getDate("last_date"));
-        postEntity.setLike_number(rs.getInt("like_num"));
-        postEntity.setFollow_number(rs.getInt("follow_num"));
-        postEntity.setPost_id(rs.getString("post_id"));
-        postEntity.setDetail(rs.getString("detail"));
-        postEntity.setTitle(rs.getString("title"));
-        return postEntity;
+        PostEntity post = new PostEntity();
+        post.setUser_id(rs.getString("usr_id"));
+        post.setPub_date(rs.getDate("pub_date"));
+        post.setLast_date(rs.getDate("last_date"));
+        post.setLike_number(rs.getInt("like_num"));
+        post.setFollow_number(rs.getInt("follow_num"));
+        post.setPost_id(rs.getString("post_id"));
+        post.setDetail(rs.getString("detail"));
+        post.setTitle(rs.getString("title"));
+        return post;
     }
 }

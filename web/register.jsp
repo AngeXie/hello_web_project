@@ -34,7 +34,7 @@
     <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8">
-            <form action="register" method="postEntity">
+            <form action="register" method="post">
                 <div class="form-group">
                     <label for="username">用户名</label>
                     <input type="text" class="form-control" placeholder="请输入您的用户名" name="username"/>

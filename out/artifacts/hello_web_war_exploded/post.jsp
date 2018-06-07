@@ -1,15 +1,15 @@
 <%@ page import="dao.UserDao" %>
-<%@ page import="entity.User" %>
+<%@ page import="entity.UserEntity" %>
 <%@ page import="dao.PostDao" %>
 <%@ page import="java.util.ArrayList" %>
-<%@ page import="entity.Post" %>
+<%@ page import="entity.PostEntity" %>
 <%@ page import="dao.ResourceDao" %>
-<%@ page import="entity.Resource" %>
-<%@ page import="entity.Comment" %>
+<%@ page import="entity.ResourceEntity" %>
+<%@ page import="entity.CommentEntity" %>
 <%@ page import="dao.CommentDao" %>
 <%--
   Created by IntelliJ IDEA.
-  User: ange
+  UserEntity: ange
   Date: 2018/5/20
   Time: 21:07
   To change this template use File | Settings | File Templates.
@@ -17,9 +17,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     String postid = request.getParameter("postid");
-    Post curPost =(new PostDao()).getPost_byid(postid);
-    ArrayList<Comment> comments = (new CommentDao()).getComment_byPostId(postid);
-    User post_user = (new UserDao()).getUserInfoByID(curPost.getUser_id());
+    PostEntity curPost =(new PostDao()).getPost_byid(postid);
+    ArrayList<CommentEntity> comments = (new CommentDao()).getComment_byPostId(postid);
+    UserEntity post_user = (new UserDao()).getUserInfoByID(curPost.getUser_id());
 %>
 <html>
 
@@ -102,8 +102,8 @@
             <div class="row comments" id="comments">
                 <div class="col-md-12">
                     <%
-                        User comment_user;
-                        for (int i=0; i<comments.size(); i++){
+                        UserEntity comment_user;
+                        for (int i = 0; i< comments.size(); i++){
                             comment_user = (new UserDao()).getUserInfoByID(comments.get(i).getUser_id());
                     %>
                     <div class="row comment_item">

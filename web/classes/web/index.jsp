@@ -1,11 +1,12 @@
 <%@ page import="java.util.ArrayList" %>
-<%@ page import="entity.News" %>
+<%@ page import="entity.NewsEntity" %>
 <%@ page import="dao.NewsDao" %>
-<%@ page import="entity.User" %>
+<%@ page import="entity.UserEntity" %>
 <%@ page import="dao.UserDao" %>
-<%@ page import="entity.Post" %>
+<%@ page import="entity.PostEntity" %>
 <%@ page import="dao.PostDao" %>
-<%@ page import="serivce.Test" %><%--
+<%@ page import="serivce.Test" %>
+<%--
   Created by IntelliJ IDEA.
   User: ange
   Date: 2018/5/15
@@ -25,6 +26,7 @@
   //System.out.println(test.test_getCommentCount_byPostId("100000000001"));
   //System.out.println(test.test_getFollowedCount_byPostId("100000000022"));
   //test.test_getComments_byUsrId("1819d8832000");
+  //test.test_getFollowedPosts_byUserid("1819d8c52007");
 %>
 <%
   int news_range = 6;;
@@ -34,15 +36,15 @@
    int news04 = 3;
    int news05 = 4;
    int news06 = 5;
-  ArrayList<News> news = (new NewsDao()).getNews_withRange(news_range);
+  ArrayList<NewsEntity> news = (new NewsDao()).getNews_withRange(news_range);
 %>
 <%
   int users_range = 10;
-  ArrayList<User> users = (new UserDao()).getUsers_withRange(users_range);
+  ArrayList<UserEntity> users = (new UserDao()).getUsers_withRange(users_range);
 %>
 <%
   int posts_range = 20;
-  ArrayList<Post> posts = (new PostDao()).getPosts_withRange(posts_range);
+  ArrayList<PostEntity> posts = (new PostDao()).getPosts_withRange(posts_range);
 %>
 <html>
 <head>
@@ -53,17 +55,17 @@
   <meta name="keywords" content="">
   <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" href="bootstrap-4.1.1-dist/css/bootstrap.min.css">
-  <script src="js/jquery-1.4.2.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
-  <script src="bootstrap-4.1.1-dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
 </head>
 
 <body>
 <div class="container-fluid header">
   <div class="row">
     <div class="col-md-5"><img src="image/logo1.png" alt="" class="webLogo1" /></div>
-    <div class="col-md-1 resource"><a href="resource.jsp" class="btn btn-info btn-sm">resource </a></div>
+    <div class="col-md-1 resource"><a href="resource.jsp" class="btn btn-info btn-sm">resource</a></div>
     <div class="col-md-4 search">
       <form action="" method="get" class="form-horizontal" role="form">
         <div class="row">
@@ -92,12 +94,12 @@
     <div class="col-md-4">
       <div class="row">
         <div class="col-md-12 new-item01">
-          <span class="new-item-title"><%=news.get(news01).getTitle()%></span>
+          <span class="new-item-title">戴尔易安信全体销售会师澳门，共启新时代！</span>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12 new-item02">
-          <span class="new-item-title"><%=news.get(news02).getTitle()%></span>
+          <span class="new-item-title">超越 Windows 时代！微软 Build 大会都透露了啥？</span>
         </div>
       </div>
     </div>
@@ -115,25 +117,25 @@
           <div class="carousel-item active">
             <img src="image/news/news1.jpg">
             <div class="carousel-caption">
-              <a href="#" class=""><h3><%=news.get(news03).getTitle()%></h3></a>
+              <a href="#" class=""><h3>全媒体数据可视化的时代</h3></a>
             </div>
           </div>
           <div class="carousel-item">
             <img src="image/news/news2.jpg">
             <div class="carousel-caption">
-              <a href="#" class=""><h3><%=news.get(news04).getTitle()%></h3></a>
+              <a href="#" class=""><h3>HTML5 的新世界</h3></a>
             </div>
           </div>
           <div class="carousel-item">
             <img src="image/news/news3.jpg">
             <div class="carousel-caption">
-              <a href="#" class=""><h3><%=news.get(news05).getTitle()%></h3></a>
+              <a href="#" class=""><h3>最好用的响应式框架：bootstrap</h3></a>
             </div>
           </div>
           <div class="carousel-item">
             <img src="image/news/news4.jpg">
             <div class="carousel-caption">
-              <a href="#" class=""><h3><%=news.get(news06).getTitle()%></h3></a>
+              <a href="#" class=""><h3>ajax 从入门到精通</h3></a>
             </div>
           </div>
         </div>
@@ -151,11 +153,11 @@
 <div class="container-fluid recommened-content">
   <div class="row">
     <div class="col-md-1"></div>
-    <div class="col-md-<%=session.getAttribute("user") == null ?9:7%> recommened-posts">
+    <div class="col-md-<%=session.getAttribute("user") == null ?9:7%> recommened-post">
       <span>推荐帖子：</span>
       <%
-        User user;
-        for (int i=0; i<posts.size()-1; i++){
+        UserEntity user;
+        for (int i = 0; i< posts.size()-1; i++){
             user = (new UserDao()).getUserInfoByID(posts.get(i).getUser_id());
       %>
       <div class="row rec-post">
@@ -169,7 +171,7 @@
             <a href="post.jsp?postid=<%=posts.get(i).getPost_id()%>"><h4><%=posts.get(i).getTitle()%></h4></a>
           </div>
           <div class="row rec-post-detail">
-            <span><%=posts.get(i).getDetail().length() >100 ? posts.get(i).getDetail().substring(0, 99)+"....":posts.get(i).getDetail()%></span></div>
+            <span><%=posts.get(i).getDetail().length() >100 ? posts.get(i).getDetail().substring(0, 99)+"....": posts.get(i).getDetail()%></span></div>
         </div>
       </div>
       <hr class="rec-post-sline">
@@ -188,7 +190,7 @@
           </div>
           <div class="row rec-post-detail">
             <span>
-            <%=posts.get(posts.size()-1).getDetail().length() >100 ? posts.get(posts.size()-1).getDetail().substring(0, 99)+"....":posts.get(posts.size()-1).getDetail()%>
+            <%=posts.get(posts.size()-1).getDetail().length() >100 ? posts.get(posts.size()-1).getDetail().substring(0, 99)+"....": posts.get(posts.size()-1).getDetail()%>
             </span>
           </div>
         </div>
@@ -208,7 +210,7 @@
     <div class="col-md-2 recommened-usrs">
       <span>您可能会喜欢的用户：</span>
       <%
-        for (int i=0; i<users.size(); i++){
+        for (int i = 0; i< users.size(); i++){
       %>
       <div class="row recommened-usr">
         <div class="col-md-4"><img src="<%=users.get(i).getHead()%>" alt="" class="rec-usrHead" title="head"></div>

@@ -108,12 +108,12 @@ public class UserDao {
 
     /**
      * 添加用户
-     * @param userEntity
+     * @param user
      * @return
      */
-    public int addUser(UserEntity userEntity) throws SQLException {
-        String sql = "insert into tb_user values(?, ?, ?, ?, ?, ?)";
-        String[] objs = {userEntity.getId(), userEntity.getName(), userEntity.getPwd(), userEntity.getHead(), userEntity.getStatus(), userEntity.getEmail()};
+    public int addUser(UserEntity user) throws SQLException {
+        String sql = "insert into tb_user  (usr_id,usr_name,usr_pwd,usr_himg,usr_status,usr_email) values(?, ?, ?, ?, ?, ?)";
+        String[] objs = {user.getId(), user.getName(), user.getPwd(), user.getHead(), user.getStatus(), user.getEmail()};
         dbDao.executeSqlNoneRs(sql, objs);
         dbDao.dispose();
         return DbDao.EXEC_SUCCESS;

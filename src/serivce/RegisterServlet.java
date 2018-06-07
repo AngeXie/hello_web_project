@@ -25,25 +25,25 @@ public class RegisterServlet extends HttpServlet {
         request.setCharacterEncoding("utf-8");
         response.setCharacterEncoding("gb2312");
         PrintWriter out = response.getWriter();
-        UserEntity userEntity = new UserEntity();
-        userEntity.setId((new IDGenerator()).generate());
-        userEntity.setEmail(request.getParameter("useremail"));
-        userEntity.setHead(UserEntity.DEFAULT_HEAD);
-        userEntity.setStatus(UserEntity.STATUS_NORMAL);
-        userEntity.setPwd(request.getParameter("userpwd"));
-        userEntity.setName(request.getParameter("username"));
+        UserEntity user = new UserEntity();
+        user.setId((new IDGenerator()).generate());
+        user.setEmail(request.getParameter("useremail"));
+        user.setHead(UserEntity.DEFAULT_HEAD);
+        user.setStatus(UserEntity.STATUS_NORMAL);
+        user.setPwd(request.getParameter("userpwd"));
+        user.setName(request.getParameter("username"));
         UserDao userDao = new UserDao();
         String reg_fail = "<script>alert('很抱歉注册失败，您可以尝试更改信息后重试');window.location='register.jsp';</script>";
         String reg_success = "<script>alert('注册成功，当前为已登录状态，即将为您跳转至主页面');window.location='index.jsp';</script>";
         try {
-            userDao.addUser(userEntity);
+            userDao.addUser(user);
         } catch (SQLException e) {
-            System.out.println(e.getMessage());
+            System.out.println("register fail\n"+e.getMessage());
             out.println(reg_fail);
             return;
         }
         HttpSession session = request.getSession(true);
-        session.setAttribute("user", userEntity);
+        session.setAttribute("user", user);
         out.println(reg_success);
     }
     @Override
