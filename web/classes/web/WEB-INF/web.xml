@@ -21,4 +21,22 @@
         <servlet-name>ResgisterServlet</servlet-name>
         <url-pattern>/register</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UploadImg</servlet-name>
+        <servlet-class>serivce.UploadImg</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UploadImg</servlet-name>
+        <url-pattern>/UploadImg</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CommentServlet</servlet-name>
+        <servlet-class>serivce.CommentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CommentServlet</servlet-name>
+        <url-pattern>/commentServlet</url-pattern>
+    </servlet-mapping>
 </web-app>

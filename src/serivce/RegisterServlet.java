@@ -1,7 +1,7 @@
 package serivce;
 
 import dao.UserDao;
-import entity.User;
+import entity.UserEntity;
 import util.IDGenerator;
 
 import javax.servlet.ServletException;
@@ -25,25 +25,25 @@ public class RegisterServlet extends HttpServlet {
         request.setCharacterEncoding("utf-8");
         response.setCharacterEncoding("gb2312");
         PrintWriter out = response.getWriter();
-        User user = new User();
-        user.setId((new IDGenerator()).generate());
-        user.setEmail(request.getParameter("useremail"));
-        user.setHead(User.DEFAULT_HEAD);
-        user.setStatus(User.STATUS_NORMAL);
-        user.setPwd(request.getParameter("userpwd"));
-        user.setName(request.getParameter("username"));
+        UserEntity userEntity = new UserEntity();
+        userEntity.setId((new IDGenerator()).generate());
+        userEntity.setEmail(request.getParameter("useremail"));
+        userEntity.setHead(UserEntity.DEFAULT_HEAD);
+        userEntity.setStatus(UserEntity.STATUS_NORMAL);
+        userEntity.setPwd(request.getParameter("userpwd"));
+        userEntity.setName(request.getParameter("username"));
         UserDao userDao = new UserDao();
         String reg_fail = "<script>alert('很抱歉注册失败，您可以尝试更改信息后重试');window.location='register.jsp';</script>";
         String reg_success = "<script>alert('注册成功，当前为已登录状态，即将为您跳转至主页面');window.location='index.jsp';</script>";
         try {
-            userDao.addUser(user);
+            userDao.addUser(userEntity);
         } catch (SQLException e) {
             System.out.println(e.getMessage());
             out.println(reg_fail);
             return;
         }
         HttpSession session = request.getSession(true);
-        session.setAttribute("user", user);
+        session.setAttribute("user", userEntity);
         out.println(reg_success);
     }
     @Override

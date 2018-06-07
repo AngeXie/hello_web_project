@@ -32,13 +32,13 @@
     <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8">
-            <form action="login" class="" method="post">
+            <form action="login" class="" method="postEntity">
                 <div class="form-group">
-                    <label for="username">user name</label>
+                    <label for="username">userEntity name</label>
                     <input type="text" class="form-control" id="username" placeholder="enter your name" name="username"/>
                 </div>
                 <div class="form-group">
-                    <label for="password">user password</label>
+                    <label for="password">userEntity password</label>
                     <input type="password" class="form-control" id="userpwd" placeholder="enter your password" name="userpwd"/>
                 </div>
                 <div class="form-check">
