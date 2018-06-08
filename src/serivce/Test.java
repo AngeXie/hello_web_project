@@ -3,6 +3,7 @@ package serivce;
 import dao.CommentDao;
 import dao.PostDao;
 import dao.UserDao;
+import entity.UserEntity;
 import model.CommentByUserModel;
 import model.FolllowedPostByUserModel;
 
@@ -138,6 +139,22 @@ public class Test {
         }
     }
 
+    /**
+     * 给陈祥梅用的示例：显示关注的人列表（每个关注的人：名字/粉丝数/发表文章数/）
+     * @param usr_id
+     */
+    public void test_getFollowingUser_byUserId(String usr_id){
+        try {
+            ArrayList<UserEntity> users = new UserDao().getFollowingUser_byUserId(usr_id);
+            for (UserEntity user : users){
+                System.out.println(user.getName());
+                System.out.println(new UserDao().getUserFollowedCount_byUserId(user.getId()));
+                System.out.println(new UserDao().getUserArticleCount_byId(user.getId()));
+            }
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+    }
 
 
     private void println(Object o){

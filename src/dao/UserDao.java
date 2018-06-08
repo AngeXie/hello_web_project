@@ -85,6 +85,24 @@ public class UserDao {
     }
 
     /**
+     * 根据用户id查询该用户关注的人
+     * @param userId
+     * @return
+     * @throws SQLException
+     */
+    public ArrayList<UserEntity> getFollowingUser_byUserId(String userId) throws SQLException {
+        ArrayList<UserEntity> followingUsers = new ArrayList<UserEntity>();
+        String sql = "select tu.* from TB_USER tu where tu.usr_id in (select tfu.followed_id from TB_FOLLOW_USR tfu where tfu.usr_id = ?)";
+        String[] objs = {userId};
+        ResultSet rs = dbDao.getData(sql, objs);
+        while (rs.next()) {
+            followingUsers.add(getUsrEntity(rs));
+        }
+        dbDao.dispose();
+        return followingUsers;
+    }
+
+    /**
      * 取一定数量的用户数据
      * @param range
      * @return
@@ -179,7 +197,7 @@ public class UserDao {
         return DbDao.EXEC_SUCCESS;
     }
 
-    public UserEntity getUsrEntity(ResultSet rs) throws SQLException {
+    private UserEntity getUsrEntity(ResultSet rs) throws SQLException {
         UserEntity user = new UserEntity();
         user.setId(rs.getString("usr_id"));
         user.setName(rs.getString("usr_name"));

@@ -27,6 +27,7 @@
   //System.out.println(test.test_getFollowedCount_byPostId("100000000022"));
   //test.test_getComments_byUsrId("1819d8832000");
   //test.test_getFollowedPosts_byUserid("1819d8c52007");
+  test.test_getFollowingUser_byUserId("1819d8832000");
 %>
 <%
   int news_range = 6;;
