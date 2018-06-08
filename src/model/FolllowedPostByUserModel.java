@@ -15,16 +15,16 @@ public class FolllowedPostByUserModel {
     private String detail;
     private String title;
 
-    public FolllowedPostByUserModel(PostEntity postEntity, String author_name) {
-        this.author_id = postEntity.getUser_id();
+    public FolllowedPostByUserModel(PostEntity post, String author_name) {
+        this.author_id = post.getUser_id();
         this.author_name = author_name;
-        this.pub_date = postEntity.getPub_date();
-        this.last_date = postEntity.getLast_date();
-        this.like_number = postEntity.getLike_number();
-        this.follow_number = postEntity.getFollow_number();
-        this.post_id = postEntity.getPost_id();
-        this.detail = postEntity.getDetail();
-        this.title = postEntity.getTitle();
+        this.pub_date = post.getPub_date();
+        this.last_date = post.getLast_date();
+        this.like_number = post.getLike_number();
+        this.follow_number = post.getFollow_number();
+        this.post_id = post.getPost_id();
+        this.detail = post.getDetail();
+        this.title = post.getTitle();
     }
 
     public String getAuthor_id() {

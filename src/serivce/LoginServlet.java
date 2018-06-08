@@ -25,17 +25,17 @@ public class LoginServlet extends HttpServlet {
         PrintWriter out = response.getWriter();
         String usr_name = request.getParameter("username");
         String usr_pwd = request.getParameter("userpwd");
-        UserEntity userEntity = (new UserDao()).getUserInfoByName(usr_name);
+        UserEntity user = (new UserDao()).getUserInfoByName(usr_name);
         String hint_fail = "<script>alert('用户信息错误！请重新输入');window.location='login.jsp';</script>";
         String hint_success = "<script>alert('登陆成功！即将跳转至主页');window.location='index.jsp';</script>";
-        if (userEntity == null){
+        if (user == null){
             out.println(hint_fail);
             //response.sendRedirect("login.jsp");
             return;
         }
-        if (usr_pwd.equals(userEntity.getPwd())){
+        if (usr_pwd.equals(user.getPwd())){
             HttpSession session = request.getSession(true);
-            session.setAttribute("user", userEntity);
+            session.setAttribute("user", user);
             out.println(hint_success);
             //response.sendRedirect("index.jsp");
         }else {

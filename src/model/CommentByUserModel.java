@@ -13,13 +13,13 @@ public class CommentByUserModel {
     private int like_num;
     private String postTiltle;
 
-    public CommentByUserModel(CommentEntity commentEntity, String postTiltle) {
-        this.comment_id = commentEntity.getComment_id();
-        this.post_id = commentEntity.getPost_id();
-        this.user_id = commentEntity.getUser_id();
-        this.date = commentEntity.getDate();
-        this.detail = commentEntity.getDetail();
-        this.like_num = commentEntity.getLike_num();
+    public CommentByUserModel(CommentEntity comment, String postTiltle) {
+        this.comment_id = comment.getComment_id();
+        this.post_id = comment.getPost_id();
+        this.user_id = comment.getUser_id();
+        this.date = comment.getDate();
+        this.detail = comment.getDetail();
+        this.like_num = comment.getLike_num();
         this.postTiltle = postTiltle;
     }
 

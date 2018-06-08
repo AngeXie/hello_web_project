@@ -14,40 +14,40 @@ public class UserDao {
      *  根据用户名获取用户信息
      */
     public UserEntity getUserInfoByName(String name){
-        UserEntity userEntity = new UserEntity();
+        UserEntity user = new UserEntity();
         String sql  = "select * from tb_user where usr_name = ?";
         String[] objs = {name};
         try {
             ResultSet rs = dbDao.getData(sql, objs);
             if (rs.next())
-                userEntity = getUsrEntity(rs);
+                user = getUsrEntity(rs);
             dbDao.dispose();
         }catch (Exception e){
             System.out.println("read name erro!!!");
             System.out.print(e.getMessage());
             return null;
         }
-        return userEntity;
+        return user;
     }
 
     /**
      *  根据用户id 获取该用户信息
      */
     public UserEntity getUserInfoByID(String id){
-        UserEntity userEntity = new UserEntity();
+        UserEntity user = new UserEntity();
         String sql  = "select * from tb_user where usr_id = ?";
         String[] objs = {id};
         try {
             ResultSet rs = dbDao.getData(sql, objs);
             if (rs.next())
-                userEntity = getUsrEntity(rs);
+                user = getUsrEntity(rs);
             dbDao.dispose();
         }catch (Exception e){
             System.out.println("read id erro!!!");
             System.out.print(e.getMessage());
             return null;
         }
-        return userEntity;
+        return user;
     }
 
     /**
@@ -90,20 +90,20 @@ public class UserDao {
      * @return
      */
     public ArrayList<UserEntity> getUsers_withRange(int range){
-        ArrayList<UserEntity> userEntities = new ArrayList<UserEntity>();
+        ArrayList<UserEntity> users = new ArrayList<UserEntity>();
         String sql = "select * from TB_USER";
         String[] objs = {};
         try {
             ResultSet rs = dbDao.getData(sql, objs);
             while (rs.next() && range>0){
-                userEntities.add(getUsrEntity(rs));
+                users.add(getUsrEntity(rs));
                 range--;
             }
             dbDao.dispose();
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
-        return userEntities;
+        return users;
     }
 
     /**
@@ -180,15 +180,15 @@ public class UserDao {
     }
 
     public UserEntity getUsrEntity(ResultSet rs) throws SQLException {
-        UserEntity userEntity = new UserEntity();
-        userEntity.setId(rs.getString("usr_id"));
-        userEntity.setName(rs.getString("usr_name"));
-        userEntity.setPwd(rs.getString("usr_pwd"));
-        userEntity.setStatus(rs.getString("usr_status"));
-        userEntity.setEmail(rs.getString("usr_email"));
-        userEntity.setHead(rs.getString("usr_himg"));
-        userEntity.setReported_count(rs.getInt("reported_count"));
-        userEntity.setUsr_intro(rs.getString("usr_intro"));
-        return userEntity;
+        UserEntity user = new UserEntity();
+        user.setId(rs.getString("usr_id"));
+        user.setName(rs.getString("usr_name"));
+        user.setPwd(rs.getString("usr_pwd"));
+        user.setStatus(rs.getString("usr_status"));
+        user.setEmail(rs.getString("usr_email"));
+        user.setHead(rs.getString("usr_himg"));
+        user.setReported_count(rs.getInt("reported_count"));
+        user.setUsr_intro(rs.getString("usr_intro"));
+        return user;
     }
 }
