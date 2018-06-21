@@ -85,7 +85,7 @@
             data : {post_title : post_title, post_content : post_content, post_id : post_id},
             success : function() {
                 alert("发帖成功！ 即将跳往帖子页面");
-                window.location.href = "post.jsp?postid="+post_id;
+                window.location.href = "post.jsp?page=1&postid="+post_id;
             }
         });
     }

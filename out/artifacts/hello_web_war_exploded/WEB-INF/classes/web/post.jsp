@@ -18,8 +18,14 @@
 <%
     String postid = request.getParameter("postid");
     PostEntity curPost =(new PostDao()).getPost_byid(postid);
-    ArrayList<CommentEntity> comments = (new CommentDao()).getComment_byPostId(postid);
+    int curPage = Integer.parseInt(request.getParameter("page"));
+    //ArrayList<CommentEntity> comments = (new CommentDao()).getComment_byPostId(postid);
     UserEntity post_user = (new UserDao()).getUserInfoByID(curPost.getUser_id());
+%>
+<%
+    ArrayList<ArrayList<CommentEntity>> page_datas = new CommentDao().getComments_byPage(5, postid);
+    int page_num = (page_datas == null) ? 0 : page_datas.size();
+    ArrayList<CommentEntity> comments = (page_datas == null) ? null : page_datas.get(curPage-1);
 %>
 <html>
 
@@ -122,7 +128,7 @@
                 <div class="col-md-12">
                     <%
                         UserEntity comment_user;
-                        for (int i = 0; i< comments.size(); i++){
+                        for (int i = 0; page_datas!=null && i< comments.size(); i++){
                             comment_user = (new UserDao()).getUserInfoByID(comments.get(i).getUser_id());
                     %>
                     <div class="row comment_item">
@@ -172,20 +178,64 @@
             <div class="row comment-pages">
                 <nav>
                     <ul class="pagination">
+                        <%if (curPage > 1){%>
                         <li class="page-item">
-                            <a class="page-link" href="#">
+                            <a class="page-link" href="<%="post.jsp?page="+(curPage-1)+"&postid="+curPost.getPost_id()%>">
                                 <i class="fa fa-arrow-left" aria-hidden="true"></i>
                             </a>
                         </li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <%}%>
+                        <%
+                            if (page_num <= 4 && page_num>0){
+                                for (int i=1; i<=page_num; i++){
+                                    if (i == curPage){
+                        %>
+                        <li class="page-item disabled curPage"><a class="page-link" href="#"><%=i%></a></li>
+                        <%
+                                    }
+                        %>
+                        <li class="page-item disabled"><a class="page-link" href="#"><%=i%></a></li>
+                        <%
+                                }
+                            }
+                            if (page_num > 4){
+                                if (curPage == 1){
+                        %>
+                        <li class="page-item disabled curPage"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item disabled"><a class="page-link" href="#">2</a></li>
                         <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
-                        <li class="page-item"><a class="page-link" href="#">8</a></li>
+                        <li class="page-item disabled"><a class="page-link" href="#"><%=page_num%></a></li>
+                        <%}
+                                if (curPage != 1 && curPage<(page_num-1)){
+                        %>
+                        <li class="page-item disabled"><a class="page-link" href="#"><%=curPage-1%></a></li>
+                        <li class="page-item disabled curPage"><a class="page-link" href="#"><%=curPage%></a></li>
+                        <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
+                        <li class="page-item disabled"><a class="page-link" href="#"><%=page_num%></a></li>
+                        <%}
+                                if (curPage == (page_num-1)){
+                        %>
+                        <li class="page-item disabled"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
+                        <li class="page-item disabled curPage"><a class="page-link" href="#"><%=curPage%></a></li>
+                        <li class="page-item disabled"><a class="page-link" href="#"><%=page_num%></a></li>
+                        <%}
+                                if (curPage == page_num){
+                        %>
+                        <li class="page-item disabled"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
+                        <li class="page-item disabled"><a class="page-link" href="#"><%=curPage-1%></a></li>
+                        <li class="page-item disabled curPage"><a class="page-link" href="#"><%=curPage%></a></li>
+                        <%}
+                            }
+                        %>
+                        <%if (curPage < page_num && page_num!=0){%>
                         <li class="page-item">
-                            <a class="page-link" href="#">
+                            <a class="page-link" href="<%="post.jsp?page="+(curPage+1)+"&postid="+curPost.getPost_id()%>">
                                 <i class="fa fa-arrow-right" aria-hidden="true"></i>
                             </a>
                         </li>
+                        <%}%>
                     </ul>
                 </nav>
             </div>
@@ -288,6 +338,11 @@
         editor.txt.html('<p style="font-weight: 600; color: #AE592D; text-decoration: underline">'+info+'</p><br/>');
         editor.focus();
     }
+
+    $(function(){
+        $(".curPage a").eq(0).css("color", "#999999");
+        $(".curPage a").eq(0).css("font-weight", "700");
+    });
 </script>
 </body>
 

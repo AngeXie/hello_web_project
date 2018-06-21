@@ -6,6 +6,8 @@
 <%@ page import="entity.PostEntity" %>
 <%@ page import="dao.PostDao" %>
 <%@ page import="serivce.Test" %>
+<%@ page import="dao.CommentDao" %>
+<%@ page import="entity.CommentEntity" %>
 <%--
   Created by IntelliJ IDEA.
   User: ange
@@ -30,7 +32,8 @@
   //test.test_getFollowingUser_byUserId("1819d8832000");
   // test.test_getPosts_byKeyword("html");
   //test.test_getUsers_byKeyword("m");
-  System.out.println(new PostDao().getPostCount());
+  //System.out.println(new CommentDao().getCommentCount_byPostId("100000000001"));
+
 %>
 <%
   int news_range = 6;;
@@ -181,7 +184,7 @@
             <div class="col-md-4 rec-post-date"><span><%=posts.get(i).getPub_date().toString()%></span></div>
           </div>
           <div class="row rec-post-title">
-            <a href="post.jsp?postid=<%=posts.get(i).getPost_id()%>"><h4><%=posts.get(i).getTitle()%></h4></a>
+            <a href="post.jsp?page=1&postid=<%=posts.get(i).getPost_id()%>"><h4><%=posts.get(i).getTitle()%></h4></a>
           </div>
           <div class="row rec-post-detail">
             <span><%=posts.get(i).getDetail().length() >100 ? posts.get(i).getDetail().substring(0, 99)+"....": posts.get(i).getDetail()%></span></div>

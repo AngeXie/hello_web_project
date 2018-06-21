@@ -62,6 +62,33 @@ public class CommentDao {
         return comments;
     }
 
+    /**
+     * 分页查询某张帖子的评论数据
+     * @param page_size
+     * @param post_id
+     * @return
+     * @throws SQLException
+     */
+    public ArrayList<ArrayList<CommentEntity>> getComments_byPage(int page_size, String post_id) throws SQLException {
+        ArrayList<ArrayList<CommentEntity>> pages = new ArrayList<ArrayList<CommentEntity>>();
+        ArrayList<CommentEntity> page_contents;
+        int data_size = getCommentCount_byPostId(post_id);
+        if (data_size == 0)
+            return null;
+        ArrayList<CommentEntity> datas = getComment_byPostId(post_id);
+        int page_num = (data_size%page_size) == 0 ? data_size/page_size : (data_size/page_size + 1);
+        int write_count = 0;
+        for (int i=0; i<page_num && write_count<data_size; i++){
+            page_contents = new ArrayList<CommentEntity>();
+            for (int j=0; j<page_size && write_count<data_size; j++){
+                page_contents.add(datas.get(i*page_size + j));
+                write_count++;
+            }
+            pages.add(page_contents);
+        }
+        return pages;
+    }
+
 
     /**
      * 根据用户id和帖子id插入评论
