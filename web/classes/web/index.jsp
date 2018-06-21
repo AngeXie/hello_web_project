@@ -27,7 +27,10 @@
   //System.out.println(test.test_getFollowedCount_byPostId("100000000022"));
   //test.test_getComments_byUsrId("1819d8832000");
   //test.test_getFollowedPosts_byUserid("1819d8c52007");
-  test.test_getFollowingUser_byUserId("1819d8832000");
+  //test.test_getFollowingUser_byUserId("1819d8832000");
+  // test.test_getPosts_byKeyword("html");
+  //test.test_getUsers_byKeyword("m");
+  System.out.println(new PostDao().getPostCount());
 %>
 <%
   int news_range = 6;;
@@ -65,7 +68,7 @@
 <body>
 <div class="container-fluid header">
   <div class="row">
-    <div class="col-md-5"><img src="image/logo1.png" alt="" class="webLogo1" /></div>
+    <div class="col-md-5"><img src="image/logo1.png" alt="" class="webLogo1"/></div>
     <div class="col-md-1 resource"><a href="resource.jsp" class="btn btn-info btn-sm">resource</a></div>
     <div class="col-md-4 search">
       <form action="" method="get" class="form-horizontal" role="form">
@@ -73,18 +76,27 @@
           <div class="col-md-10">
             <input type="text" class="form-control" name="keyword">
           </div>
-          <div class="col-md-2"><i class="fa fa-search fa-lg" aria-hidden="true" onclick="submit"></i></div>
+          <div class="col-md-2 search-submit-btn"><i class="fa fa-search fa-lg" aria-hidden="true" onclick="submit"></i></div>
         </div>
       </form>
     </div>
     <%
       if (session.getAttribute("user") == null) {
     %>
-    <div class="col-md-2 loginBtn"><a href="login.jsp" class="btn btn-warning btn-sm">sign in</a></div>
+    <div class="col-md-2 signIn-btn">
+      <a href="login.jsp" class="btn btn-warning btn-sm">sign in</a>
+    </div>
     <%
       }else {
     %>
-    <div class="col-md-2 loginBtn"><a href="#" class="btn btn-warning btn-sm">用户中心</a></div>
+    <div class="col-md-2 header-user-btn">
+      <a href="#" title='用户中心' class="userinfo-btn">
+        <i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i>
+      </a>
+      <a href="posting.jsp" title="发帖" class="post-btn">
+        <i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i>
+      </a>
+    </div>
     <%
       }
     %>

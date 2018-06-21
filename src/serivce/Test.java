@@ -3,6 +3,7 @@ package serivce;
 import dao.CommentDao;
 import dao.PostDao;
 import dao.UserDao;
+import entity.PostEntity;
 import entity.UserEntity;
 import model.CommentByUserModel;
 import model.FolllowedPostByUserModel;
@@ -150,6 +151,28 @@ public class Test {
                 System.out.println(user.getName());
                 System.out.println(new UserDao().getUserFollowedCount_byUserId(user.getId()));
                 System.out.println(new UserDao().getUserArticleCount_byId(user.getId()));
+            }
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
+    public void test_getPosts_byKeyword(String keyword){
+        try {
+            ArrayList<PostEntity> posts = new PostDao().getPosts_byKeyword(keyword);
+            for (PostEntity post : posts){
+                System.out.println("post title: "+post.getTitle());
+            }
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
+    public void test_getUsers_byKeyword(String keyword){
+        try {
+            ArrayList<UserEntity> users = new UserDao().getUsers_byKeyword(keyword);
+            for (UserEntity user : users){
+                System.out.println("user name: "+user.getName());
             }
         } catch (SQLException e) {
             System.out.println(e.getMessage());

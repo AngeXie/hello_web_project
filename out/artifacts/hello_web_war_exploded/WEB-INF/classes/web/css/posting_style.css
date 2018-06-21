@@ -1,0 +1,91 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2018-06-13 21:07:53
+ * @version $Id$
+ */
+ body{
+ 	background-color: #EDEDED;
+ }
+
+ .header{
+ 	background-color: #0F305D;
+ }
+ .search{
+ 	margin-top: 80px;
+ }
+ .searchbtn{
+ 	background-color: #0F305D;
+ 	color: #FFFFFF;
+ }
+ .return-index-btn,.user-info-btn{
+ 	font-size: 12px;
+ }
+ .return-index-btn i{
+ 	color: #C81522;
+ 	margin-top: 3px;
+ }
+ .user-info-btn i{
+ 	color: #FFC107;
+ 	margin-top: 3px;
+ }
+ .return-index-btn i:hover{
+ 	color: #FF692F;
+ }
+ .user-info-btn i:hover{
+ 	color: #E5C181;
+ }
+ .header span{
+ 	font-size: 15px;
+ 	color: #EDEDED;
+ 	font-weight: 700;
+ 	line-height: 30px;
+ }
+ .user-name{
+ 	margin-left: 5px;
+ 	font-weight: 500;
+ }
+ .post{
+ 	margin-top: 60px;
+ }
+ .post-title{
+ 	padding: 0px;
+ }
+ .post-title-hint span{
+ 	font-size: 20px;
+ 	font-weight: 600;
+ 	line-height: 60px;
+ 	color: #5A5858;
+ }
+ .post-title-input{
+ 	width: inherit;
+ 	height: 45px;
+ }
+ .post-content{
+ 	margin-top: 20px;
+ }
+ .post-editor{
+ 	background-color: #fff;
+ 	width: inherit;
+ 	height: inherit;
+ 	margin: 0px;
+ 	padding: 0px;
+ }
+ .post-btn{
+	float: right;
+	margin-top: 30px;
+ }
+ .post-btn:hover{
+	cursor: pointer;
+ }
+ .post-btn i{
+ 	font-size: 40px;
+ 	color: #A1A1A1;
+ 	padding-right: 10px;
+ }
+ .post-btn span{
+ 	color: #A1A1A1;
+ 	font-size: 20px;
+ 	margin-top: 15px;
+ }

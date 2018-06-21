@@ -51,6 +51,25 @@ public class UserDao {
     }
 
     /**
+     * 根据关键字搜索用户
+     * @param keyword
+     * @return
+     * @throws SQLException
+     */
+    public ArrayList<UserEntity> getUsers_byKeyword(String keyword) throws SQLException {
+        ArrayList<UserEntity> users = new ArrayList<UserEntity>();
+        String sql = "select * from tb_user where lower(usr_name) like ?";
+        keyword = "%"+keyword.toLowerCase()+"%";
+        String[] objs = {keyword};
+        ResultSet rs  = dbDao.getData(sql, objs);
+        while (rs.next()) {
+            users.add(getUsrEntity(rs));
+        }
+        dbDao.dispose();
+        return users;
+    }
+
+    /**
      * 根据用户id获取该用户发表过的文章数
      * @param userId
      * @return
@@ -192,6 +211,21 @@ public class UserDao {
     public int updateUsrInfo_Email(String usr_id, String newEmail) throws SQLException {
         String sql = "update TB_USER set usr_email = ? where usr_id = ?";
         String[] objs = {newEmail, usr_id};
+        dbDao.executeSqlNoneRs(sql, objs);
+        dbDao.dispose();
+        return DbDao.EXEC_SUCCESS;
+    }
+
+    /**
+     * 更改指定id用户的简介
+     * @param usr_id
+     * @param newIntro
+     * @return
+     * @throws SQLException
+     */
+    public int updateUsrInfo_UsrIntro(String usr_id, String newIntro) throws SQLException {
+        String sql = "update TB_USER set usr_intro = ? where usr_id = ?";
+        String[] objs = {newIntro, usr_id};
         dbDao.executeSqlNoneRs(sql, objs);
         dbDao.dispose();
         return DbDao.EXEC_SUCCESS;

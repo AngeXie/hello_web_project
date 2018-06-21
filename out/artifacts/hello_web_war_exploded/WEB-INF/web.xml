@@ -39,4 +39,13 @@
         <servlet-name>CommentServlet</servlet-name>
         <url-pattern>/commentServlet</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PostServlet</servlet-name>
+        <servlet-class>serivce.PostingServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PostServlet</servlet-name>
+        <url-pattern>/postServlet</url-pattern>
+    </servlet-mapping>
 </web-app>

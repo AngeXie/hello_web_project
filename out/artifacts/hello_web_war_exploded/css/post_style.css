@@ -8,6 +8,27 @@
  body{
  	background-color: #EDEDED;
  }
+.header-user-btn{
+	margin-top: 1px;
+}
+.signIn-btn{
+	margin-top: 1px;
+}
+.header-user-btn a{
+	color: #17A2B8;
+	font-size: 15px;
+	text-decoration: none;
+}
+.userinfo-btn:hover{
+	text-decoration: none;
+	color: #D0D0D0;
+}
+.post-btn{
+	margin-left: 20px;
+}
+.post-btn:hover{
+	color: #FAC862;
+}
  .header{
  	background-color: #0F305D;
  	height: 50px;
@@ -33,6 +54,10 @@
  	height: 30px;
  	font-size: 8px;
  }
+.search-submit-btn{
+	padding-top: 6px;
+	cursor: pointer;
+}
  .title{
  	background-color: #fff;
  	padding-left: 10px;
@@ -227,5 +252,7 @@
  	background-color: #999999;
  	color: #EDEDED;
  }
-
+.header-user-btn a i{
+	margin-top: 8px;
+}
 

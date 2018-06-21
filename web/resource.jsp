@@ -49,7 +49,11 @@
         <%
         }else {
         %>
-        <div class="col-md-2"><a href="#" class="btn btn-danger btn-sm">用户中心</a></div>
+        <div class="col-md-2">
+            <a href="#" class="user-info-btn" title="用户中心">
+                <i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i>
+            </a>
+        </div>
         <%
             }
         %>

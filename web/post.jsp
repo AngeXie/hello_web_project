@@ -53,11 +53,30 @@
                     <div class="col-md-10">
                         <input type="text" class="form-control">
                     </div>
-                    <div class="col-md-2"><i class="fa fa-search fa-lg" aria-hidden="true"></i></div>
+                    <div class="col-md-2 search-submit-btn"><i class="fa fa-search fa-lg" aria-hidden="true"></i></div>
                 </div>
             </form>
         </div>
-        <div class="col-md-2"><a href="login.html" class="btn btn-danger btn-sm">SIGN IN</a></div>
+        <%
+            if (session.getAttribute("user") == null) {
+        %>
+        <div class="col-md-2 signIn-btn">
+            <a href="login.jsp" class="btn btn-warning btn-sm">sign in</a>
+        </div>
+        <%
+        }else {
+        %>
+        <div class="col-md-2 header-user-btn">
+            <a href="#" title='用户中心' class="userinfo-btn">
+                <i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i>
+            </a>
+            <a href="posting.jsp" title="发帖" class="post-btn">
+                <i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i>
+            </a>
+        </div>
+        <%
+            }
+        %>
     </div>
 </div>
 <div class="container-fluid title_r">
@@ -93,7 +112,7 @@
             <div class="row post-btn">
                 <div class="col-md-7"></div>
                 <div class="col-md-5">
-                    <span class="post_date"><%=curPost.getLast_date().toString()%></span>
+                    <span class="post_date"><%=curPost.getPub_date().toString()%></span>
                     <a href="#" title="点赞"><i class="fa fa-thumbs-o-up" aria-hidden="true">(<%=curPost.getLike_number()%>)</i></a>
                     <a href="#" title="收藏"><i class="fa fa-heart" aria-hidden="true">(<%=curPost.getFollow_number()%>)</i></a>
                     <a href="#" title="举报"><i class="fa fa-hand-paper-o" aria-hidden="true"></i></a>

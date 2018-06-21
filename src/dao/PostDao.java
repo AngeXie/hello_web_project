@@ -85,6 +85,53 @@ public class PostDao {
     }
 
     /**
+     * 根据关键字搜索帖子
+     * @param keyword
+     * @return
+     * @throws SQLException
+     */
+    public ArrayList<PostEntity> getPosts_byKeyword(String keyword) throws SQLException {
+        ArrayList<PostEntity> posts = new ArrayList<PostEntity>();
+        String sql = "select * from tb_post where lower(title) like ?";
+        keyword = "%"+keyword.toLowerCase()+"%";
+        String[] objs = {keyword};
+        ResultSet rs = dbDao.getData(sql, objs);
+        while (rs.next()) {
+            posts.add(getPostEntity(rs));
+        }
+        dbDao.dispose();
+        return posts;
+    }
+
+    /**
+     * 分页查询帖子数据
+     * @param pageSize
+     * @return
+     */
+    public ArrayList<ArrayList<PostEntity>> getPosts_byPage(int pageSize) throws SQLException {
+        ArrayList<ArrayList<PostEntity>> pages = new ArrayList<ArrayList<PostEntity>>();
+        int post_count = getPostCount();
+        String sql = "select * from TB_POST";
+        ResultSet rs = dbDao.getData(sql, new String[]{});
+        return pages;
+    }
+
+    /**
+     * 查询总记录数
+     * @return
+     * @throws SQLException
+     */
+    public int getPostCount() throws SQLException {
+        String sql = "select count(post_id) from tb_post";
+        ResultSet rs = dbDao.getData(sql, new String[]{});
+        int result = 0;
+        if (rs.next())
+            result = rs.getInt(1);
+        dbDao.dispose();
+        return result;
+    }
+
+    /**
      * 读取一定数量的post数据
      * @param range
      * @return
@@ -104,6 +151,20 @@ public class PostDao {
             System.out.println(e.getMessage());
         }
         return posts;
+    }
+
+    /**
+     * 添加帖子
+     * @param post
+     * @return
+     * @throws SQLException
+     */
+    public int addPost(PostEntity post) throws SQLException {
+        String sql = "insert into TB_POST  (post_id, usr_id, detail, title) values(?, ?, ?, ?)";
+        String[] objs = {post.getPost_id(), post.getUser_id(), post.getDetail(), post.getTitle()};
+        dbDao.executeSqlNoneRs(sql, objs);
+        dbDao.dispose();
+        return DbDao.EXEC_SUCCESS;
     }
 
     /**
